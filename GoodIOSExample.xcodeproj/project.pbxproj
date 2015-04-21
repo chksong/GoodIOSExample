@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B05EF2161AE6498B00CEFFAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2151AE6498B00CEFFAF /* main.m */; };
+		B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2181AE6498B00CEFFAF /* AppDelegate.m */; };
+		B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF21B1AE6498B00CEFFAF /* MasterViewController.m */; };
+		B05EF21F1AE6498B00CEFFAF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF21E1AE6498B00CEFFAF /* DetailViewController.m */; };
+		B05EF2221AE6498B00CEFFAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B05EF2201AE6498B00CEFFAF /* Main.storyboard */; };
+		B05EF2241AE6498B00CEFFAF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B05EF2231AE6498B00CEFFAF /* Images.xcassets */; };
+		B05EF2271AE6498B00CEFFAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05EF2251AE6498B00CEFFAF /* LaunchScreen.xib */; };
+		B05EF2331AE6498B00CEFFAF /* GoodIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B05EF22D1AE6498B00CEFFAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B05EF2081AE6498B00CEFFAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B05EF20F1AE6498B00CEFFAF;
+			remoteInfo = GoodIOSExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B05EF2101AE6498B00CEFFAF /* GoodIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05EF2141AE6498B00CEFFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B05EF2151AE6498B00CEFFAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B05EF2171AE6498B00CEFFAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B05EF2181AE6498B00CEFFAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B05EF21A1AE6498B00CEFFAF /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B05EF21B1AE6498B00CEFFAF /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B05EF21D1AE6498B00CEFFAF /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B05EF21E1AE6498B00CEFFAF /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B05EF2211AE6498B00CEFFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B05EF2231AE6498B00CEFFAF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B05EF2261AE6498B00CEFFAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B05EF22C1AE6498B00CEFFAF /* GoodIOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodIOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B05EF2311AE6498B00CEFFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodIOSExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B05EF20D1AE6498B00CEFFAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05EF2291AE6498B00CEFFAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B05EF2071AE6498B00CEFFAF = {
+			isa = PBXGroup;
+			children = (
+				B05EF2121AE6498B00CEFFAF /* GoodIOSExample */,
+				B05EF22F1AE6498B00CEFFAF /* GoodIOSExampleTests */,
+				B05EF2111AE6498B00CEFFAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B05EF2111AE6498B00CEFFAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B05EF2101AE6498B00CEFFAF /* GoodIOSExample.app */,
+				B05EF22C1AE6498B00CEFFAF /* GoodIOSExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B05EF2121AE6498B00CEFFAF /* GoodIOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				B05EF2171AE6498B00CEFFAF /* AppDelegate.h */,
+				B05EF2181AE6498B00CEFFAF /* AppDelegate.m */,
+				B05EF21A1AE6498B00CEFFAF /* MasterViewController.h */,
+				B05EF21B1AE6498B00CEFFAF /* MasterViewController.m */,
+				B05EF21D1AE6498B00CEFFAF /* DetailViewController.h */,
+				B05EF21E1AE6498B00CEFFAF /* DetailViewController.m */,
+				B05EF2201AE6498B00CEFFAF /* Main.storyboard */,
+				B05EF2231AE6498B00CEFFAF /* Images.xcassets */,
+				B05EF2251AE6498B00CEFFAF /* LaunchScreen.xib */,
+				B05EF2131AE6498B00CEFFAF /* Supporting Files */,
+			);
+			path = GoodIOSExample;
+			sourceTree = "<group>";
+		};
+		B05EF2131AE6498B00CEFFAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B05EF2141AE6498B00CEFFAF /* Info.plist */,
+				B05EF2151AE6498B00CEFFAF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B05EF22F1AE6498B00CEFFAF /* GoodIOSExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */,
+				B05EF2301AE6498B00CEFFAF /* Supporting Files */,
+			);
+			path = GoodIOSExampleTests;
+			sourceTree = "<group>";
+		};
+		B05EF2301AE6498B00CEFFAF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B05EF2311AE6498B00CEFFAF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B05EF20F1AE6498B00CEFFAF /* GoodIOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B05EF2361AE6498B00CEFFAF /* Build configuration list for PBXNativeTarget "GoodIOSExample" */;
+			buildPhases = (
+				B05EF20C1AE6498B00CEFFAF /* Sources */,
+				B05EF20D1AE6498B00CEFFAF /* Frameworks */,
+				B05EF20E1AE6498B00CEFFAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoodIOSExample;
+			productName = GoodIOSExample;
+			productReference = B05EF2101AE6498B00CEFFAF /* GoodIOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B05EF22B1AE6498B00CEFFAF /* GoodIOSExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B05EF2391AE6498B00CEFFAF /* Build configuration list for PBXNativeTarget "GoodIOSExampleTests" */;
+			buildPhases = (
+				B05EF2281AE6498B00CEFFAF /* Sources */,
+				B05EF2291AE6498B00CEFFAF /* Frameworks */,
+				B05EF22A1AE6498B00CEFFAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B05EF22E1AE6498B00CEFFAF /* PBXTargetDependency */,
+			);
+			name = GoodIOSExampleTests;
+			productName = GoodIOSExampleTests;
+			productReference = B05EF22C1AE6498B00CEFFAF /* GoodIOSExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B05EF2081AE6498B00CEFFAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "chksong company";
+				TargetAttributes = {
+					B05EF20F1AE6498B00CEFFAF = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					B05EF22B1AE6498B00CEFFAF = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = B05EF20F1AE6498B00CEFFAF;
+					};
+				};
+			};
+			buildConfigurationList = B05EF20B1AE6498B00CEFFAF /* Build configuration list for PBXProject "GoodIOSExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B05EF2071AE6498B00CEFFAF;
+			productRefGroup = B05EF2111AE6498B00CEFFAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B05EF20F1AE6498B00CEFFAF /* GoodIOSExample */,
+				B05EF22B1AE6498B00CEFFAF /* GoodIOSExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B05EF20E1AE6498B00CEFFAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05EF2221AE6498B00CEFFAF /* Main.storyboard in Resources */,
+				B05EF2271AE6498B00CEFFAF /* LaunchScreen.xib in Resources */,
+				B05EF2241AE6498B00CEFFAF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05EF22A1AE6498B00CEFFAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B05EF20C1AE6498B00CEFFAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */,
+				B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */,
+				B05EF2161AE6498B00CEFFAF /* main.m in Sources */,
+				B05EF21F1AE6498B00CEFFAF /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B05EF2281AE6498B00CEFFAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B05EF2331AE6498B00CEFFAF /* GoodIOSExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B05EF22E1AE6498B00CEFFAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B05EF20F1AE6498B00CEFFAF /* GoodIOSExample */;
+			targetProxy = B05EF22D1AE6498B00CEFFAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B05EF2201AE6498B00CEFFAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B05EF2211AE6498B00CEFFAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B05EF2251AE6498B00CEFFAF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B05EF2261AE6498B00CEFFAF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B05EF2341AE6498B00CEFFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B05EF2351AE6498B00CEFFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B05EF2371AE6498B00CEFFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoodIOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B05EF2381AE6498B00CEFFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GoodIOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B05EF23A1AE6498B00CEFFAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoodIOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodIOSExample.app/GoodIOSExample";
+			};
+			name = Debug;
+		};
+		B05EF23B1AE6498B00CEFFAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoodIOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodIOSExample.app/GoodIOSExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B05EF20B1AE6498B00CEFFAF /* Build configuration list for PBXProject "GoodIOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05EF2341AE6498B00CEFFAF /* Debug */,
+				B05EF2351AE6498B00CEFFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B05EF2361AE6498B00CEFFAF /* Build configuration list for PBXNativeTarget "GoodIOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05EF2371AE6498B00CEFFAF /* Debug */,
+				B05EF2381AE6498B00CEFFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B05EF2391AE6498B00CEFFAF /* Build configuration list for PBXNativeTarget "GoodIOSExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B05EF23A1AE6498B00CEFFAF /* Debug */,
+				B05EF23B1AE6498B00CEFFAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B05EF2081AE6498B00CEFFAF /* Project object */;
+}
