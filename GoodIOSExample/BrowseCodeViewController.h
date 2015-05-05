@@ -10,4 +10,6 @@
 
 @interface BrowseCodeViewController : UIViewController
 
+@property (nonatomic ,strong) NSString *urlString ;
+
 @end

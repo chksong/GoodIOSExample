@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72A8772064359B27EC7B6373 /* libPods-GoodIOSExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4A599A21BE5704A7877D2B /* libPods-GoodIOSExample.a */; };
+		B04949371AF71C3F00C5BD6B /* WebKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04949351AF71C3F00C5BD6B /* WebKitViewController.m */; };
+		B04949381AF71C3F00C5BD6B /* WebKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04949361AF71C3F00C5BD6B /* WebKitViewController.xib */; };
+		B04949411AF8608900C5BD6B /* BrowseCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B049493F1AF8608900C5BD6B /* BrowseCodeViewController.m */; };
+		B04949421AF8608900C5BD6B /* BrowseCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04949401AF8608900C5BD6B /* BrowseCodeViewController.xib */; };
 		B05EF2161AE6498B00CEFFAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2151AE6498B00CEFFAF /* main.m */; };
 		B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2181AE6498B00CEFFAF /* AppDelegate.m */; };
 		B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF21B1AE6498B00CEFFAF /* MasterViewController.m */; };
@@ -28,6 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4A599A21BE5704A7877D2B /* libPods-GoodIOSExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodIOSExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48716CD9018A00755C8DBB73 /* Pods-GoodIOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodIOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodIOSExample/Pods-GoodIOSExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A53FDB7F15E5DF662D2EE678 /* Pods-GoodIOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodIOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodIOSExample/Pods-GoodIOSExample.release.xcconfig"; sourceTree = "<group>"; };
+		B04949341AF71C3F00C5BD6B /* WebKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebKitViewController.h; path = Samples/WebKitViewController.h; sourceTree = "<group>"; };
+		B04949351AF71C3F00C5BD6B /* WebKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebKitViewController.m; path = Samples/WebKitViewController.m; sourceTree = "<group>"; };
+		B04949361AF71C3F00C5BD6B /* WebKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebKitViewController.xib; path = Samples/WebKitViewController.xib; sourceTree = "<group>"; };
+		B049493E1AF8608900C5BD6B /* BrowseCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseCodeViewController.h; sourceTree = "<group>"; };
+		B049493F1AF8608900C5BD6B /* BrowseCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseCodeViewController.m; sourceTree = "<group>"; };
+		B04949401AF8608900C5BD6B /* BrowseCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseCodeViewController.xib; sourceTree = "<group>"; };
 		B05EF2101AE6498B00CEFFAF /* GoodIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05EF2141AE6498B00CEFFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B05EF2151AE6498B00CEFFAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A8772064359B27EC7B6373 /* libPods-GoodIOSExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +78,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E7FCDB57B94BEE9E74F3AE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E4A599A21BE5704A7877D2B /* libPods-GoodIOSExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B04949321AF71BBC00C5BD6B /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				B04949391AF71CA600C5BD6B /* WebKit */,
+			);
+			name = Samples;
+			sourceTree = "<group>";
+		};
+		B04949391AF71CA600C5BD6B /* WebKit */ = {
+			isa = PBXGroup;
+			children = (
+				B04949341AF71C3F00C5BD6B /* WebKitViewController.h */,
+				B04949351AF71C3F00C5BD6B /* WebKitViewController.m */,
+				B04949361AF71C3F00C5BD6B /* WebKitViewController.xib */,
+			);
+			name = WebKit;
+			sourceTree = "<group>";
+		};
 		B05EF2071AE6498B00CEFFAF = {
 			isa = PBXGroup;
 			children = (
 				B05EF2121AE6498B00CEFFAF /* GoodIOSExample */,
 				B05EF22F1AE6498B00CEFFAF /* GoodIOSExampleTests */,
 				B05EF2111AE6498B00CEFFAF /* Products */,
+				E33AE370125E4282F74953CE /* Pods */,
+				4E7FCDB57B94BEE9E74F3AE5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +127,7 @@
 		B05EF2121AE6498B00CEFFAF /* GoodIOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				B04949321AF71BBC00C5BD6B /* Samples */,
 				B05EF2171AE6498B00CEFFAF /* AppDelegate.h */,
 				B05EF2181AE6498B00CEFFAF /* AppDelegate.m */,
 				B05EF21A1AE6498B00CEFFAF /* MasterViewController.h */,
@@ -94,6 +138,9 @@
 				B05EF2231AE6498B00CEFFAF /* Images.xcassets */,
 				B05EF2251AE6498B00CEFFAF /* LaunchScreen.xib */,
 				B05EF2131AE6498B00CEFFAF /* Supporting Files */,
+				B049493E1AF8608900C5BD6B /* BrowseCodeViewController.h */,
+				B049493F1AF8608900C5BD6B /* BrowseCodeViewController.m */,
+				B04949401AF8608900C5BD6B /* BrowseCodeViewController.xib */,
 			);
 			path = GoodIOSExample;
 			sourceTree = "<group>";
@@ -124,6 +171,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E33AE370125E4282F74953CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48716CD9018A00755C8DBB73 /* Pods-GoodIOSExample.debug.xcconfig */,
+				A53FDB7F15E5DF662D2EE678 /* Pods-GoodIOSExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B05EF2361AE6498B00CEFFAF /* Build configuration list for PBXNativeTarget "GoodIOSExample" */;
 			buildPhases = (
+				4FC0B19C1B090987E55E336F /* Check Pods Manifest.lock */,
 				B05EF20C1AE6498B00CEFFAF /* Sources */,
 				B05EF20D1AE6498B00CEFFAF /* Frameworks */,
 				B05EF20E1AE6498B00CEFFAF /* Resources */,
+				4B6D6FCA8E27E1087FD503B4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B05EF2221AE6498B00CEFFAF /* Main.storyboard in Resources */,
+				B04949421AF8608900C5BD6B /* BrowseCodeViewController.xib in Resources */,
 				B05EF2271AE6498B00CEFFAF /* LaunchScreen.xib in Resources */,
+				B04949381AF71C3F00C5BD6B /* WebKitViewController.xib in Resources */,
 				B05EF2241AE6498B00CEFFAF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +279,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B6D6FCA8E27E1087FD503B4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoodIOSExample/Pods-GoodIOSExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FC0B19C1B090987E55E336F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B05EF20C1AE6498B00CEFFAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -226,6 +319,8 @@
 			files = (
 				B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */,
 				B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */,
+				B04949371AF71C3F00C5BD6B /* WebKitViewController.m in Sources */,
+				B04949411AF8608900C5BD6B /* BrowseCodeViewController.m in Sources */,
 				B05EF2161AE6498B00CEFFAF /* main.m in Sources */,
 				B05EF21F1AE6498B00CEFFAF /* DetailViewController.m in Sources */,
 			);
@@ -347,6 +442,7 @@
 		};
 		B05EF2371AE6498B00CEFFAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48716CD9018A00755C8DBB73 /* Pods-GoodIOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoodIOSExample/Info.plist;
@@ -357,6 +453,7 @@
 		};
 		B05EF2381AE6498B00CEFFAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A53FDB7F15E5DF662D2EE678 /* Pods-GoodIOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoodIOSExample/Info.plist;
@@ -418,6 +515,7 @@
 				B05EF2381AE6498B00CEFFAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B05EF2391AE6498B00CEFFAF /* Build configuration list for PBXNativeTarget "GoodIOSExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +524,7 @@
 				B05EF23B1AE6498B00CEFFAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
