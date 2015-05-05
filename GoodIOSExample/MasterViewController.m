@@ -8,6 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "BrowseCodeViewController.h"
 
 #define kItemKeyTitle           @"title"
 #define kItemKeyDescription     @"description"
@@ -133,7 +134,7 @@
         if ( [instance isKindOfClass:[UIViewController class]]) {
             self.currentClass = className  ;
             // CODE button
-            UIBarButtonItem *barBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"CODE"
+            UIBarButtonItem *barBtnItem = [[UIBarButtonItem alloc] initWithTitle:@"代码"
                                                                            style:UIBarButtonItemStylePlain
                                                                           target:self
                                                                           action:@selector(codeButtonTapped:)] ;
@@ -153,6 +154,15 @@
 
 -(void) codeButtonTapped:(id) sender {
     
+    NSString *urlStr =[NSString stringWithFormat:@"https://github.com/chksong/GoodIOSExample/tree/master/GoodIOSExample/Samples/%@.m" ,self.currentClass] ;
+    NSLog(@"%s  urlStr=%@", __FUNCTION__, urlStr);
+    
+    BrowseCodeViewController *codeCtr = [[BrowseCodeViewController alloc] init];
+    [codeCtr setTitle:self.currentClass];
+    [codeCtr setUrlString:urlStr];
+    
+    
+    [self.navigationController pushViewController:codeCtr animated:YES];
 }
 
 @end
