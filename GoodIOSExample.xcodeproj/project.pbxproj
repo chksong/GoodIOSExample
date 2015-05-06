@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		72A8772064359B27EC7B6373 /* libPods-GoodIOSExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E4A599A21BE5704A7877D2B /* libPods-GoodIOSExample.a */; };
-		B04949371AF71C3F00C5BD6B /* WebKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04949351AF71C3F00C5BD6B /* WebKitViewController.m */; };
-		B04949381AF71C3F00C5BD6B /* WebKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04949361AF71C3F00C5BD6B /* WebKitViewController.xib */; };
 		B04949411AF8608900C5BD6B /* BrowseCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B049493F1AF8608900C5BD6B /* BrowseCodeViewController.m */; };
 		B04949421AF8608900C5BD6B /* BrowseCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04949401AF8608900C5BD6B /* BrowseCodeViewController.xib */; };
+		B049495D1AF9E56B00C5BD6B /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B049495B1AF9E56B00C5BD6B /* WKWebViewViewController.m */; };
+		B049495E1AF9E56B00C5BD6B /* WKWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B049495C1AF9E56B00C5BD6B /* WKWebViewViewController.xib */; };
+		B04949621AF9E70B00C5BD6B /* WebKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04949601AF9E70B00C5BD6B /* WebKitViewController.m */; };
+		B04949631AF9E70B00C5BD6B /* WebKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B04949611AF9E70B00C5BD6B /* WebKitViewController.xib */; };
 		B05EF2161AE6498B00CEFFAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2151AE6498B00CEFFAF /* main.m */; };
 		B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2181AE6498B00CEFFAF /* AppDelegate.m */; };
 		B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF21B1AE6498B00CEFFAF /* MasterViewController.m */; };
@@ -36,12 +38,15 @@
 		1E4A599A21BE5704A7877D2B /* libPods-GoodIOSExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodIOSExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48716CD9018A00755C8DBB73 /* Pods-GoodIOSExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodIOSExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoodIOSExample/Pods-GoodIOSExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A53FDB7F15E5DF662D2EE678 /* Pods-GoodIOSExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodIOSExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodIOSExample/Pods-GoodIOSExample.release.xcconfig"; sourceTree = "<group>"; };
-		B04949341AF71C3F00C5BD6B /* WebKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebKitViewController.h; path = Samples/WebKitViewController.h; sourceTree = "<group>"; };
-		B04949351AF71C3F00C5BD6B /* WebKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebKitViewController.m; path = Samples/WebKitViewController.m; sourceTree = "<group>"; };
-		B04949361AF71C3F00C5BD6B /* WebKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebKitViewController.xib; path = Samples/WebKitViewController.xib; sourceTree = "<group>"; };
 		B049493E1AF8608900C5BD6B /* BrowseCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowseCodeViewController.h; sourceTree = "<group>"; };
 		B049493F1AF8608900C5BD6B /* BrowseCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseCodeViewController.m; sourceTree = "<group>"; };
 		B04949401AF8608900C5BD6B /* BrowseCodeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowseCodeViewController.xib; sourceTree = "<group>"; };
+		B049495A1AF9E56B00C5BD6B /* WKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKWebViewViewController.h; path = Samples/WKWebViewViewController.h; sourceTree = "<group>"; };
+		B049495B1AF9E56B00C5BD6B /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKWebViewViewController.m; path = Samples/WKWebViewViewController.m; sourceTree = "<group>"; };
+		B049495C1AF9E56B00C5BD6B /* WKWebViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WKWebViewViewController.xib; path = Samples/WKWebViewViewController.xib; sourceTree = "<group>"; };
+		B049495F1AF9E70B00C5BD6B /* WebKitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebKitViewController.h; path = Samples/WebKitViewController.h; sourceTree = "<group>"; };
+		B04949601AF9E70B00C5BD6B /* WebKitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebKitViewController.m; path = Samples/WebKitViewController.m; sourceTree = "<group>"; };
+		B04949611AF9E70B00C5BD6B /* WebKitViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WebKitViewController.xib; path = Samples/WebKitViewController.xib; sourceTree = "<group>"; };
 		B05EF2101AE6498B00CEFFAF /* GoodIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B05EF2141AE6498B00CEFFAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B05EF2151AE6498B00CEFFAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +94,7 @@
 		B04949321AF71BBC00C5BD6B /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				B049494A1AF9A53600C5BD6B /* WKWebView */,
 				B04949391AF71CA600C5BD6B /* WebKit */,
 			);
 			name = Samples;
@@ -97,11 +103,21 @@
 		B04949391AF71CA600C5BD6B /* WebKit */ = {
 			isa = PBXGroup;
 			children = (
-				B04949341AF71C3F00C5BD6B /* WebKitViewController.h */,
-				B04949351AF71C3F00C5BD6B /* WebKitViewController.m */,
-				B04949361AF71C3F00C5BD6B /* WebKitViewController.xib */,
+				B049495F1AF9E70B00C5BD6B /* WebKitViewController.h */,
+				B04949601AF9E70B00C5BD6B /* WebKitViewController.m */,
+				B04949611AF9E70B00C5BD6B /* WebKitViewController.xib */,
 			);
 			name = WebKit;
+			sourceTree = "<group>";
+		};
+		B049494A1AF9A53600C5BD6B /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				B049495A1AF9E56B00C5BD6B /* WKWebViewViewController.h */,
+				B049495B1AF9E56B00C5BD6B /* WKWebViewViewController.m */,
+				B049495C1AF9E56B00C5BD6B /* WKWebViewViewController.xib */,
+			);
+			name = WKWebView;
 			sourceTree = "<group>";
 		};
 		B05EF2071AE6498B00CEFFAF = {
@@ -264,8 +280,9 @@
 			files = (
 				B05EF2221AE6498B00CEFFAF /* Main.storyboard in Resources */,
 				B04949421AF8608900C5BD6B /* BrowseCodeViewController.xib in Resources */,
+				B04949631AF9E70B00C5BD6B /* WebKitViewController.xib in Resources */,
+				B049495E1AF9E56B00C5BD6B /* WKWebViewViewController.xib in Resources */,
 				B05EF2271AE6498B00CEFFAF /* LaunchScreen.xib in Resources */,
-				B04949381AF71C3F00C5BD6B /* WebKitViewController.xib in Resources */,
 				B05EF2241AE6498B00CEFFAF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,10 +334,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B049495D1AF9E56B00C5BD6B /* WKWebViewViewController.m in Sources */,
 				B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */,
 				B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */,
-				B04949371AF71C3F00C5BD6B /* WebKitViewController.m in Sources */,
 				B04949411AF8608900C5BD6B /* BrowseCodeViewController.m in Sources */,
+				B04949621AF9E70B00C5BD6B /* WebKitViewController.m in Sources */,
 				B05EF2161AE6498B00CEFFAF /* main.m in Sources */,
 				B05EF21F1AE6498B00CEFFAF /* DetailViewController.m in Sources */,
 			);

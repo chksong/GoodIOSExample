@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A30DBA3E-2DC9-4041-800A-1DC4EA928338</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GoodIOSExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C51D3FC49BE14DBA28F7990265F611B64AF90226</key>
+		<string>https://github.com/chksong/GoodIOSExample.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GoodIOSExample.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C51D3FC49BE14DBA28F7990265F611B64AF90226</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/chksong/GoodIOSExample.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C51D3FC49BE14DBA28F7990265F611B64AF90226</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C51D3FC49BE14DBA28F7990265F611B64AF90226</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GoodIOSExample</string>
+		</dict>
+	</array>
+</dict>
+</plist>

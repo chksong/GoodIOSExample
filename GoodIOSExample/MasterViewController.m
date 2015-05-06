@@ -41,6 +41,10 @@
     
     self.items = @[
                    // WebKit
+                   @{kItemKeyTitle: @"WKWebView",
+                     kItemKeyDescription: @"一个使用WKWebView的demo",
+                     kItemKeyClassPrefix: @"WKWebView",
+                     },
                    @{kItemKeyTitle: @"WebKit",
                      kItemKeyDescription: @"一个使用WKWebView的demo",
                      kItemKeyClassPrefix: @"WebKit",

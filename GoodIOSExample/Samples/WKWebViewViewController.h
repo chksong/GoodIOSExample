@@ -1,5 +1,5 @@
 //
-//  WebKitViewController.h
+//  WKWebViewViewController.h
 //  GoodIOSExample
 //
 //  Created by chksong on 15-5-6.
@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WebKitViewController : UIViewController
+@interface WKWebViewViewController : UIViewController
+
+@property (nonatomic ,strong) NSString* urlString ;
+
 
 @end
