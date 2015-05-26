@@ -10,4 +10,6 @@
 
 @interface WebKitViewController : UIViewController
 
+@property (nonatomic ,strong) NSString * urlString ;
+
 @end

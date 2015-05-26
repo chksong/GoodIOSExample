@@ -10,7 +10,7 @@
 #import <WebKit/WebKit.h>
 #import <SVProgressHUD.h>
 
-@interface WKWebViewViewController ()<WKNavigationDelegate>
+@interface WKWebViewViewController ()<WKNavigationDelegate,WKUIDelegate>
 
 @property (nonatomic ,strong)  CADisplayLink *link  ;
 @property (nonatomic, strong)  WKWebView *webView;
@@ -27,15 +27,14 @@
     
     self.webView =  [[WKWebView alloc] initWithFrame:self.view.bounds];
     self.webView.navigationDelegate = self ;
-    //   self.webView.UIDelegate = self ;
-    
     [self.view addSubview:self.webView];
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
     
     //    NSURL *url = [NSURL URLWithString:@"http://www.bing.com"];
     //    NSURLRequest *request = [NSURLRequest requestWithURL:url ];
     //    [self.webView loadRequest:request] ;
     
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.baidu.com"]]];
+  
     
     //    _webView = [[WKWebView alloc] initWithFrame:self.view.bounds];
     //    _webView.UIDelegate = self;
