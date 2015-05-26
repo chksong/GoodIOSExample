@@ -69,11 +69,15 @@
   //  transiton.type = @"cameraIrisHollowOpen ";
   //  transiton.type = @"cameraIrisHollowClose ";
     transiton.subtype = kCATransitionFromRight ;
-
+    transiton.startProgress = 0.3 ;
+    transiton.endProgress = 0.5 ;
     
     [self.view exchangeSubviewAtIndex:1 withSubviewAtIndex:0];
     [self.view.layer addAnimation:transiton forKey:@"animation"];
     
+//    这两个属性是float类型的。 可以控制动画进行的过程，可以让动画停留在某个动画点上，值在0.0到1.0之间。endProgress要大于等于startProgress。
+//    比如上面的立方体转到，可以设置endProgress= 0.5，让动画停留在转动一般的位置。
+//    上面这些私有的动画效果，在实际应用中要谨慎使用。因为在app store审核时可能会以为这些动画效果而拒绝通过。
     
 }
 
