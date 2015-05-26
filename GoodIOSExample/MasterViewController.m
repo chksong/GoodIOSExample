@@ -50,6 +50,11 @@
                      kItemKeyClassPrefix: @"WebKit",
                      },
                    
+                   @{kItemKeyTitle: @"简单动画",
+                     kItemKeyDescription: @"一个简单动画",
+                     kItemKeyClassPrefix: @"SimpleAnimation",
+                     },
+
 
                    ] ;
     
