@@ -59,6 +59,8 @@
                    ] ;
     
     self.title = @"IOS 学习笔记" ;
+    //去掉 多余的割线
+    [self.tableView setTableFooterView:[[UIView alloc] init]];
 }
 
 - (void)didReceiveMemoryWarning {
