@@ -56,7 +56,7 @@
                      },
                    @{
                      kItemKeyTitle: @"测试TableView",
-                     kItemKeyDescription: @"测试TabelView各种操作",
+                     kItemKeyDescription: @"自己手工代码测试TabelView各种操作",
                      kItemKeyClassPrefix: @"MoveTable",
                      },
 
