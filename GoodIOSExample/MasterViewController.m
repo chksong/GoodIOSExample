@@ -54,6 +54,11 @@
                      kItemKeyDescription: @"一个简单动画",
                      kItemKeyClassPrefix: @"SimpleAnimation",
                      },
+                   @{
+                     kItemKeyTitle: @"测试TableView",
+                     kItemKeyDescription: @"测试TabelView各种操作",
+                     kItemKeyClassPrefix: @"MoveTabelViewController",
+                     },
 
 
                    ] ;

@@ -8,8 +8,12 @@
 
 #import "SettingViewController.h"
 
+#define  k_title    @"title"
+#define  k_switch   @"isWitch"
+
 @interface SettingViewController ()<UITableViewDataSource,UITableViewDelegate>
 
+@property(strong ,nonatomic) NSMutableArray * arrayContext ;
 @end
 
 @implementation SettingViewController
@@ -25,7 +29,18 @@
     [self.tableView setTableFooterView:[[UIView alloc] init]];
     [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 16, 0)];
     [self.tableView setAllowsSelectionDuringEditing:YES];
+    
+    
+    self.arrayContext = [[NSMutableArray alloc] init] ;
 
+    NSArray *arrayContext =  @[
+                         @{k_title:@"编辑表格" ,k_switch:@YES},
+                          @{k_title:@"local notification" ,k_switch:@NO},
+                          @{k_title:@"夜间模式", k_switch:@YES},
+                          
+                          ];
+    
+    [self.arrayContext  setArray:arrayContext];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,37 +75,62 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  2 ;
+    return [self.arrayContext count];
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * cellIdentifier = @"settingcell" ;
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier] ;
-    if ( 0 ==  indexPath.row) {
-        cell.textLabel.text = @"local notification" ;
-    }
-    else {
-        cell.textLabel.text =@"其他" ;
+    
+    NSDictionary *item = self.arrayContext[indexPath.row] ;
+    
+    cell.textLabel.text = item[k_title];
+    id isSwith = item[k_switch] ;
+    if ([@YES  isEqual: isSwith]) {
+        UISwitch *aswitch = [[UISwitch alloc] init];
+        aswitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:@"CK_B_NGIHT"];
+        [aswitch addTarget:self action:@selector(swtihDayOrNight:) forControlEvents:UIControlEventValueChanged];
+
+        cell.accessoryView = aswitch ;
     }
     
+//    
+//    if ( 0 ==  indexPath.row) {
+//        cell.textLabel.text = @"local notification" ;
+//    }
+//    else if (1 == indexPath.row) {
+//        cell.textLabel.text =@"夜间模式" ;
+//
+//    }
     
     return  cell ;
 }
 
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0: {
-            [self doSendNotifaction];
-            }
-            break;
-        default:
-            break;
+    
+    NSDictionary *item = self.arrayContext[indexPath.row] ;
+    if ([item[k_title] isEqualToString:@"local notification"]) {
+        [self doSendNotifaction];
     }
+    else if ([item[k_title] isEqualToString:@"编辑表格"]) {
+        [self setEditTable] ;
+    }
+    
+    
+    
+
 }
 
+//启动测试表格的
+-(void) setEditTable {
+    
+}
 
+-(void) swtihDayOrNight:(id)sender {
+    
+}
 
 -(void) doSendNotifaction {
     UILocalNotification *notifcation = [[UILocalNotification alloc] init];
@@ -100,6 +140,27 @@
     
 //    [[UIApplication sharedApplication] scheduledLocalNotifications:notifcation];
     [[UIApplication sharedApplication] scheduleLocalNotification:notifcation];
+}
+
+
+//add for iOS8
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        [cell setSeparatorInset:UIEdgeInsetsZero];
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        [cell setLayoutMargins:UIEdgeInsetsZero];
+    }
+}
+
+-(void)viewDidLayoutSubviews {
+    if ([self.tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [self.tableView setSeparatorInset:UIEdgeInsetsMake(0,0,0,0)];
+    }
+    if ([self.tableView respondsToSelector:@selector(setLayoutMargins:)]) {
+        [self.tableView setLayoutMargins:UIEdgeInsetsMake(0,0,0,0)];
+    }
 }
 
 
