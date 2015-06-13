@@ -25,6 +25,8 @@
 		B05EF2271AE6498B00CEFFAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05EF2251AE6498B00CEFFAF /* LaunchScreen.xib */; };
 		B05EF2331AE6498B00CEFFAF /* GoodIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */; };
 		B08608531B29883F004B627E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08608521B29883F004B627E /* SettingViewController.m */; };
+		B0F0D9871B2CDEC200A3739B /* MoveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D9851B2CDEC200A3739B /* MoveTableViewController.m */; };
+		B0F0D9881B2CDEC200A3739B /* MoveTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0D9861B2CDEC200A3739B /* MoveTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodIOSExampleTests.m; sourceTree = "<group>"; };
 		B08608511B29883F004B627E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B08608521B29883F004B627E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B0F0D9651B2C468E00A3739B /* GoodIOSExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoodIOSExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		B0F0D9841B2CDEC200A3739B /* MoveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveTableViewController.h; path = Samples/MoveTableViewController.h; sourceTree = "<group>"; };
+		B0F0D9851B2CDEC200A3739B /* MoveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveTableViewController.m; path = Samples/MoveTableViewController.m; sourceTree = "<group>"; };
+		B0F0D9861B2CDEC200A3739B /* MoveTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoveTableViewController.xib; path = Samples/MoveTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,22 +105,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B002A6241B1449E5009D7B7F /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		B04949321AF71BBC00C5BD6B /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				B0F0D9891B2CDF4200A3739B /* 的 */,
+				B0F0D9831B2CDE8600A3739B /* 简单动画 */,
 				B049494A1AF9A53600C5BD6B /* WKWebView */,
 				B04949391AF71CA600C5BD6B /* WebKit */,
-				B002A6241B1449E5009D7B7F /* New Group */,
-				B002A61F1B14483B009D7B7F /* SimpleAnimationViewController.h */,
-				B002A6201B14483B009D7B7F /* SimpleAnimationViewController.m */,
-				B002A6211B14483B009D7B7F /* SimpleAnimationViewController.xib */,
+				B0F0D96A1B2C516600A3739B /* moveTableView */,
+				B0F0D9651B2C468E00A3739B /* GoodIOSExample-Bridging-Header.h */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -206,6 +205,33 @@
 				B05EF2311AE6498B00CEFFAF /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0F0D96A1B2C516600A3739B /* moveTableView */ = {
+			isa = PBXGroup;
+			children = (
+				B0F0D9861B2CDEC200A3739B /* MoveTableViewController.xib */,
+				B0F0D9851B2CDEC200A3739B /* MoveTableViewController.m */,
+				B0F0D9841B2CDEC200A3739B /* MoveTableViewController.h */,
+			);
+			name = moveTableView;
+			sourceTree = "<group>";
+		};
+		B0F0D9831B2CDE8600A3739B /* 简单动画 */ = {
+			isa = PBXGroup;
+			children = (
+				B002A61F1B14483B009D7B7F /* SimpleAnimationViewController.h */,
+				B002A6201B14483B009D7B7F /* SimpleAnimationViewController.m */,
+				B002A6211B14483B009D7B7F /* SimpleAnimationViewController.xib */,
+			);
+			name = "简单动画";
+			sourceTree = "<group>";
+		};
+		B0F0D9891B2CDF4200A3739B /* 的 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "的";
 			sourceTree = "<group>";
 		};
 		E33AE370125E4282F74953CE /* Pods */ = {
@@ -306,6 +332,7 @@
 			files = (
 				B05EF2221AE6498B00CEFFAF /* Main.storyboard in Resources */,
 				B04949421AF8608900C5BD6B /* BrowseCodeViewController.xib in Resources */,
+				B0F0D9881B2CDEC200A3739B /* MoveTableViewController.xib in Resources */,
 				B002A6231B14483B009D7B7F /* SimpleAnimationViewController.xib in Resources */,
 				B04949631AF9E70B00C5BD6B /* WebKitViewController.xib in Resources */,
 				B049495E1AF9E56B00C5BD6B /* WKWebViewViewController.xib in Resources */,
@@ -369,6 +396,7 @@
 				B08608531B29883F004B627E /* SettingViewController.m in Sources */,
 				B04949621AF9E70B00C5BD6B /* WebKitViewController.m in Sources */,
 				B05EF2161AE6498B00CEFFAF /* main.m in Sources */,
+				B0F0D9871B2CDEC200A3739B /* MoveTableViewController.m in Sources */,
 				B05EF21F1AE6498B00CEFFAF /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,10 +520,13 @@
 			baseConfigurationReference = 48716CD9018A00755C8DBB73 /* Pods-GoodIOSExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoodIOSExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoodIOSExample/GoodIOSExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -504,10 +535,12 @@
 			baseConfigurationReference = A53FDB7F15E5DF662D2EE678 /* Pods-GoodIOSExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoodIOSExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoodIOSExample/GoodIOSExample-Bridging-Header.h";
 			};
 			name = Release;
 		};
