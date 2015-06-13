@@ -18,7 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //注册local notification
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert |UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber=0 ;
     return YES;
+}
+
+// 在后端，当用户点击通知时候，收到
+-(void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification {
+    
+    NSLog(@"%@" ,notification) ;
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber=8;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -42,5 +57,9 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+
+
 
 @end

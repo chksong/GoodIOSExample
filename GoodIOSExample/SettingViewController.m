@@ -21,6 +21,11 @@
     
     self.tableView.dataSource = self ;
     self.tableView.delegate = self  ;
+    
+    [self.tableView setTableFooterView:[[UIView alloc] init]];
+    [self.tableView setContentInset:UIEdgeInsetsMake(0, 0, 16, 0)];
+    [self.tableView setAllowsSelectionDuringEditing:YES];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,7 +68,7 @@
     static NSString * cellIdentifier = @"settingcell" ;
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier] ;
     if ( 0 ==  indexPath.row) {
-        cell.textLabel.text = @"消息通知" ;
+        cell.textLabel.text = @"local notification" ;
     }
     else {
         cell.textLabel.text =@"其他" ;
@@ -74,8 +79,28 @@
 }
 
 
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0: {
+            [self doSendNotifaction];
+            }
+            break;
+        default:
+            break;
+    }
+}
 
 
+
+-(void) doSendNotifaction {
+    UILocalNotification *notifcation = [[UILocalNotification alloc] init];
+    notifcation.fireDate = [NSDate dateWithTimeIntervalSinceNow:10] ;
+    notifcation.alertBody = @"测试 local notification" ;
+
+    
+//    [[UIApplication sharedApplication] scheduledLocalNotifications:notifcation];
+    [[UIApplication sharedApplication] scheduleLocalNotification:notifcation];
+}
 
 
 
