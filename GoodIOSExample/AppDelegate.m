@@ -10,6 +10,10 @@
 #import "DetailViewController.h"
 
 @interface AppDelegate ()
+{
+    UIViewController* mainViewControl ;
+}
+
 
 @end
 
@@ -26,10 +30,16 @@
     
     [UIApplication sharedApplication].applicationIconBadgeNumber=0 ;
     
-    
     NSString* sildernotication = @"silderNotification" ;
-   
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handSilder:) name:sildernotication object:nil];
+    
+//    自己手动启动 设置启动窗口
+    UIStoryboard * storyboard= [UIStoryboard storyboardWithName:@"Main" bundle:nil] ;
+    mainViewControl = [storyboard instantiateViewControllerWithIdentifier:@"mainViewController" ] ;
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = mainViewControl ;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
