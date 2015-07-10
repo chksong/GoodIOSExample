@@ -12,6 +12,7 @@
 @interface AppDelegate ()
 {
     UIViewController* mainViewControl ;
+    UIStoryboard * mainStoryboard ;
 }
 
 
@@ -34,8 +35,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handSilder:) name:sildernotication object:nil];
     
 //    自己手动启动 设置启动窗口
-    UIStoryboard * storyboard= [UIStoryboard storyboardWithName:@"Main" bundle:nil] ;
-    mainViewControl = [storyboard instantiateViewControllerWithIdentifier:@"mainViewController" ] ;
+    mainStoryboard= [UIStoryboard storyboardWithName:@"Main" bundle:nil] ;
+    mainViewControl = [mainStoryboard instantiateViewControllerWithIdentifier:@"mainViewController" ] ;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = mainViewControl ;
@@ -55,6 +56,13 @@
 
 -(void) handSilder:(NSNotification*)paramNotifcation {
     NSLog(@"%@" ,paramNotifcation) ;
+    
+    UIViewController* otherCtr = [mainStoryboard instantiateViewControllerWithIdentifier:@"otherViewCtroller" ] ;
+    
+    [self.window setHidden:true] ;
+    
+    self.window.rootViewController = otherCtr ;
+    [self.window makeKeyAndVisible] ;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

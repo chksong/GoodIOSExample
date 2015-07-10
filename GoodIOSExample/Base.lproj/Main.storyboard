@@ -20,6 +20,38 @@
             </objects>
             <point key="canvasLocation" x="-65" y="60"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="m9h-bk-O2Z">
+            <objects>
+                <viewController storyboardIdentifier="otherViewCtroller" id="LvC-7p-Y9c" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W7p-wi-Zmr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Twa-46-4nU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YjU-iD-J0z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the same storyBoard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2KO-Ue-QNU">
+                                <rect key="frame" x="59" y="206" width="212" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="different rootViewControll" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FY-Xe-UbX">
+                                <rect key="frame" x="52" y="309" width="195" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XIv-9T-cpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81" y="715"/>
+        </scene>
         <!--例子-->
         <scene sceneID="VgW-fR-Quf">
             <objects>
