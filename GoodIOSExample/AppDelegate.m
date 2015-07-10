@@ -25,6 +25,12 @@
     }
     
     [UIApplication sharedApplication].applicationIconBadgeNumber=0 ;
+    
+    
+    NSString* sildernotication = @"silderNotification" ;
+   
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handSilder:) name:sildernotication object:nil];
+    
     return YES;
 }
 
@@ -34,6 +40,11 @@
     NSLog(@"%@" ,notification) ;
     
     [UIApplication sharedApplication].applicationIconBadgeNumber=8;
+}
+
+
+-(void) handSilder:(NSNotification*)paramNotifcation {
+    NSLog(@"%@" ,paramNotifcation) ;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

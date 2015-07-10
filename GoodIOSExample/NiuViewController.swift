@@ -11,12 +11,14 @@ import UIKit
 
 
 class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
+    
+    let sildernotication = "silderNotification"
 
     @IBOutlet weak var tableview: UITableView!
     
     var arrString = [
         ["title":"侧滑","key":1],
-        ["title":"如何使用swift发布库","key":1],
+        ["title":"如何使用swift发布库","key":2],
         ["title":"侧滑","key":3]
     ];
     
@@ -93,9 +95,9 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let item = arrString[indexPath.row] as? Dictionary {
             if let key = item["key"] as? Int    {
-                if (2 == key ) {
-                    
-                    
+                if (1  == key ) {
+                    let notfication = NSNotification(name: sildernotication, object: self)
+                    NSNotificationCenter.defaultCenter().postNotification(notfication)
                 }
             }
         }
