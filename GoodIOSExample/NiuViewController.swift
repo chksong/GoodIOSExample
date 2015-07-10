@@ -8,13 +8,18 @@
 
 import UIKit
 
+
+
 class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
 
     @IBOutlet weak var tableview: UITableView!
     
-    let arrString = [
-            ["title":"如何使用swift发布库"]
+    var arrString = [
+        ["title":"侧滑","key":1],
+        ["title":"如何使用swift发布库","key":1],
+        ["title":"侧滑","key":3]
     ];
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,7 +56,9 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
         
         let cell = tableView.dequeueReusableCellWithIdentifier("niuTableViewCell", forIndexPath:indexPath) as! UITableViewCell ;
         
-        cell.textLabel?.text = arrString[indexPath.row]["title"] ;
+        if let item = arrString[indexPath.row] as? Dictionary {
+            cell.textLabel?.text =  item["title"] as? String
+        }
         return cell
     }
     
@@ -80,6 +87,17 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
         if(cell.respondsToSelector("setLayoutMargins:")) {
             cell.layoutMargins = UIEdgeInsetsZero
             NSLog("%@ ---- setLayoutMargins",__FUNCTION__) ;
+        }
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let item = arrString[indexPath.row] as? Dictionary {
+            if let key = item["key"] as? Int    {
+                if (2 == key ) {
+                    
+                    
+                }
+            }
         }
     }
     
