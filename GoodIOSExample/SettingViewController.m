@@ -51,12 +51,12 @@
  
 -(void) viewDidAppear:(BOOL)animated  {
     NSLog(@"%s", __func__) ;
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
 -(void) viewDidDisappear:(BOOL)animated  {
      NSLog(@"%s", __func__) ;
-     [self.navigationController setNavigationBarHidden:NO animated:YES];
+     [self.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 /*
