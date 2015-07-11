@@ -8,11 +8,8 @@
 
 import UIKit
 
-
-
 class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDelegate{
     
-    let sildernotication = "silderNotification"
 
     @IBOutlet weak var tableview: UITableView!
     
@@ -96,7 +93,7 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
         if let item = arrString[indexPath.row] as? Dictionary {
             if let key = item["key"] as? Int    {
                 if (1  == key ) {
-                    let notfication = NSNotification(name: sildernotication, object: self, userInfo:["key": 1])
+                    let notfication = NSNotification(name: MSG_ChangRootViewCtrl , object: self, userInfo:["key": Para_ChangRootViewCtrl_sider])
                     NSNotificationCenter.defaultCenter().postNotification(notfication)
                 }
             }

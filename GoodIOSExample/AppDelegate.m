@@ -9,6 +9,11 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 
+NSString* MSG_ChangRootViewCtrl = @"notication_ChangeRootUIViewController";
+const int Para_ChangRootViewCtrl_main   = 1 ;
+const int Para_ChangRootViewCtrl_sider  = 2 ;
+
+
 @interface AppDelegate ()
 {
     UIViewController* mainViewControl ;
@@ -31,8 +36,8 @@
     
     [UIApplication sharedApplication].applicationIconBadgeNumber=0 ;
     
-    NSString* sildernotication = @"silderNotification" ;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handSilder:) name:sildernotication object:nil];
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleChangeRootView:) name:MSG_ChangRootViewCtrl object:nil];
     
 //    自己手动启动 设置启动窗口
     mainStoryboard= [UIStoryboard storyboardWithName:@"Main" bundle:nil] ;
@@ -54,22 +59,29 @@
 }
 
 
--(void) handSilder:(NSNotification*)paramNotifcation {
+
+
+-(void) handleChangeRootView:(NSNotification*)paramNotifcation {
     NSLog(@"%@" ,paramNotifcation) ;
     
     NSNumber* key = paramNotifcation.userInfo[@"key"] ;
-    if ([key integerValue] == 1) {
+    
+    if ( Para_ChangRootViewCtrl_main == [key integerValue]) {
+        mainStoryboard= [UIStoryboard storyboardWithName:@"Main" bundle:nil] ;
+        mainViewControl = [mainStoryboard instantiateViewControllerWithIdentifier:@"mainViewController" ] ;
         
+        self.window.rootViewController = mainViewControl ;
+        [self.window makeKeyAndVisible];
+    }
+    else if ([key integerValue] == Para_ChangRootViewCtrl_sider) {  // 测试 JASidePanel
         UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Silder" bundle:nil] ;
         UIViewController* otherCtr = [storyboard instantiateViewControllerWithIdentifier:@"otherViewCtroller" ]  ;
         [self.window setHidden:true] ;
         
         self.window.rootViewController = otherCtr ;
         [self.window makeKeyAndVisible] ;
-        
     }
-    
-  
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

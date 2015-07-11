@@ -3,6 +3,7 @@
 
 target 'GoodIOSExample' do
 	pod 'SVProgressHUD'
+	pod 'JASidePanels'
 end
 
 target 'GoodIOSExampleTests' do
