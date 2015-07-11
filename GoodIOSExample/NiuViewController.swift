@@ -17,7 +17,7 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableview: UITableView!
     
     var arrString = [
-        ["title":"侧滑","key":1],
+        ["title":"测试 JASidePanel","key":1],
         ["title":"如何使用swift发布库","key":2],
         ["title":"侧滑","key":3]
     ];
@@ -96,7 +96,7 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
         if let item = arrString[indexPath.row] as? Dictionary {
             if let key = item["key"] as? Int    {
                 if (1  == key ) {
-                    let notfication = NSNotification(name: sildernotication, object: self)
+                    let notfication = NSNotification(name: sildernotication, object: self, userInfo:["key": 1])
                     NSNotificationCenter.defaultCenter().postNotification(notfication)
                 }
             }

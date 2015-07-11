@@ -57,12 +57,19 @@
 -(void) handSilder:(NSNotification*)paramNotifcation {
     NSLog(@"%@" ,paramNotifcation) ;
     
-    UIViewController* otherCtr = [mainStoryboard instantiateViewControllerWithIdentifier:@"otherViewCtroller" ] ;
+    NSNumber* key = paramNotifcation.userInfo[@"key"] ;
+    if ([key integerValue] == 1) {
+        
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Silder" bundle:nil] ;
+        UIViewController* otherCtr = [storyboard instantiateViewControllerWithIdentifier:@"otherViewCtroller" ]  ;
+        [self.window setHidden:true] ;
+        
+        self.window.rootViewController = otherCtr ;
+        [self.window makeKeyAndVisible] ;
+        
+    }
     
-    [self.window setHidden:true] ;
-    
-    self.window.rootViewController = otherCtr ;
-    [self.window makeKeyAndVisible] ;
+  
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
