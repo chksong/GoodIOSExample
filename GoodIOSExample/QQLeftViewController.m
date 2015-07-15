@@ -22,17 +22,18 @@
 
 
 
-#define LEFT_VIEW_WIDTH 240 * TProportion()
+#define LEFT_VIEW_WIDTH   240 * TProportion()
 
 @implementation QQLeftViewController
 
--(CGFloat) leftViewWidth {
-    return 240 *  TProportion() ;
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    self.view.backgroundColor = [UIColor greenColor] ;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifySwitchLeftView:) name:kSwitchLeftViewNotification object:nil];
     [self initializerUserInterface];
@@ -43,7 +44,7 @@
     
     
     _leftViewContainer =[[UIView alloc] initWithFrame:CGRectMake(-LEFT_VIEW_WIDTH ,0, LEFT_VIEW_WIDTH, T_SCREEN_HEIGHT)];
-    _leftViewContainer.backgroundColor = [UIColor clearColor] ;
+    _leftViewContainer.backgroundColor = [UIColor greenColor] ;
     _leftViewContainer.clipsToBounds = YES ;
     [self.view addSubview:_leftViewContainer] ;
     
@@ -112,7 +113,8 @@
 }
 
 -(void) leftViewShow {
-    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.8 initialSpringVelocity:0.9 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+//    usingSpringWithDamping:0.9 越小 越震颤
+    [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.9 initialSpringVelocity:0.9 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
         _leftViewContainer.frame = CGRectMake(0, 0, LEFT_VIEW_WIDTH, T_SCREEN_HEIGHT) ;
         _centerViewContainer.frame = CGRectMake(LEFT_VIEW_WIDTH, T_SCREEN_HEIGHT * 0.1/2 , T_SCREEN_WIDTH * 0.9, T_SCREEN_HEIGHT * 0.9);
     } completion:^(BOOL finished) {
