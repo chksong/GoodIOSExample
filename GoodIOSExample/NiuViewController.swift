@@ -14,9 +14,8 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
     @IBOutlet weak var tableview: UITableView!
     
     var arrString = [
-        ["title":"测试 JASidePanel","key":1],
-        ["title":"如何使用swift发布库","key":2],
-        ["title":"侧滑","key":3]
+        ["title":"JASidePanel","key":1],
+        ["title":"单方向侧滑","key":2],
     ];
     
     
@@ -94,6 +93,10 @@ class NiuViewController: UIViewController , UITableViewDataSource, UITableViewDe
             if let key = item["key"] as? Int    {
                 if (1  == key ) {
                     let notfication = NSNotification(name: MSG_ChangRootViewCtrl , object: self, userInfo:["key": Para_ChangRootViewCtrl_sider])
+                    NSNotificationCenter.defaultCenter().postNotification(notfication)
+                }
+                else if (2 == key )  {
+                    let notfication = NSNotification(name: MSG_ChangRootViewCtrl , object: self, userInfo:["key": Para_ChangRootViewCtrl_qqLeft])
                     NSNotificationCenter.defaultCenter().postNotification(notfication)
                 }
             }

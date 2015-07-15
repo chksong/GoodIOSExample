@@ -83,6 +83,24 @@
             </objects>
             <point key="canvasLocation" x="764" y="290"/>
         </scene>
+        <!--Left View Controller-->
+        <scene sceneID="Ex4-dq-hWv">
+            <objects>
+                <viewController storyboardIdentifier="QQLeftViewController" id="45q-fO-rbl" customClass="QQLeftViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q3g-GF-nxe"/>
+                        <viewControllerLayoutGuide type="bottom" id="uyK-eg-jeg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RHi-Lc-kyi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qD5-21-9Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="142" y="935"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="jUM-HY-Xs9">
             <objects>

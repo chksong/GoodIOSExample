@@ -15,6 +15,7 @@ let MSG_ChangRootViewCtrl = "notication_ChangeRootUIViewController"
 
 let  Para_ChangRootViewCtrl_main  : NSNumber = 1
 let  Para_ChangRootViewCtrl_sider : NSNumber = 2
+let  Para_ChangRootViewCtrl_qqLeft : NSNumber = 3
 
 //--------------------------------------------
 

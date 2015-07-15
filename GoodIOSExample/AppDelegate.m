@@ -12,7 +12,7 @@
 NSString* MSG_ChangRootViewCtrl = @"notication_ChangeRootUIViewController";
 const int Para_ChangRootViewCtrl_main   = 1 ;
 const int Para_ChangRootViewCtrl_sider  = 2 ;
-
+const int Para_ChangRootViewCtrl_qqLeft  = 3 ;
 
 @interface AppDelegate ()
 {
@@ -80,6 +80,12 @@ const int Para_ChangRootViewCtrl_sider  = 2 ;
         
         self.window.rootViewController = otherCtr ;
         [self.window makeKeyAndVisible] ;
+    } else  if ([key integerValue] == Para_ChangRootViewCtrl_qqLeft) {
+        UIStoryboard * storyboard = [UIStoryboard storyboardWithName:@"Silder" bundle:nil] ;
+        UIViewController* QQLeftCtrl = [storyboard instantiateViewControllerWithIdentifier:@"QQLeftViewController" ]  ;
+        
+        self.window.rootViewController = QQLeftCtrl ;
+        [self.window makeKeyAndVisible];
     }
 
 }
