@@ -125,7 +125,7 @@
                         options:UIViewAnimationOptionBeginFromCurrentState
                      animations:^{
                         _leftViewContainer.frame = CGRectMake(-LEFT_VIEW_WIDTH,0, LEFT_VIEW_WIDTH , T_SCREEN_HEIGHT) ;
-                         _centerViewContainer.frame = CGRectMake(0, 0,T_SCREEN_WIDTH, T_SCREEN_WIDTH) ;
+                        _centerViewContainer.frame = CGRectMake(0, 0,T_SCREEN_WIDTH, T_SCREEN_HEIGHT) ;
                          
     } completion:^(BOOL finished) {
         _isLeftViewShow = NO ;
