@@ -66,25 +66,63 @@
     [self addChildViewController:leftvc] ;
     
     
-//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]
-//                                   initWithTarget:self action:@selector(processGestureReconizer:)];
-//    
-//    [self.view  addGestureRecognizer:pan];
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc]
+                                   initWithTarget:self action:@selector(processGestureReconizer:)];
+    
+    [self.view  addGestureRecognizer:pan];
 }
 
 
 -(void) processGestureReconizer:(UIGestureRecognizer *) gesture  {
     
-//    // ru 
-//    if ([gesture isKindOfClass:[UIPanGestureRecognizer class]]) {
-//        UIPanGestureRecognizer *pan = (UIPanGestureRecognizer*) gesture ;
-//        
-//        CGPoint translation = [pan translationInView:self.view] ;
-//        
-//        
-//        
-//        
-//    }
+    // ru 
+    if ([gesture isKindOfClass:[UIPanGestureRecognizer class]]) {
+        UIPanGestureRecognizer *pan = (UIPanGestureRecognizer*) gesture ;
+        
+        CGPoint translation = [pan translationInView:self.view] ;
+        
+        if(_isLeftViewShow && translation.x <= 0) {
+            CGFloat proportion = (fabs(translation.x) / LEFT_VIEW_WIDTH) * 0.1 + 0.9 ;
+            if ( proportion >1 ) {
+                proportion = 1 ;
+            }
+            
+            _centerViewContainer.frame = CGRectMake(LEFT_VIEW_WIDTH + translation.x ,
+                                                    (T_SCREEN_HEIGHT - T_SCREEN_HEIGHT * proportion)/2,
+                                                    T_SCREEN_WIDTH * proportion , T_SCREEN_HEIGHT * proportion) ;
+        }
+        else if (!_isLeftViewShow && translation.x >0) {
+            CGFloat proportion = 1 - (translation.x / T_SCREEN_WIDTH * 0.1) ;
+            if (proportion < 0.9) {
+                proportion = 0.9 ;
+            }
+            
+            _centerViewContainer.frame = CGRectMake(translation.x, (1- proportion) * T_SCREEN_HEIGHT/2,
+                                                    T_SCREEN_WIDTH * proportion, T_SCREEN_HEIGHT * proportion);
+        }
+        
+        
+        if (pan.state  == UIGestureRecognizerStateEnded) {
+            if (_isLeftViewShow) {
+                if ( translation.x < -140 * TProportion()) {
+                    [self leftViewHide];
+                    return ;
+                }
+                
+                [self leftViewShow];
+            
+            }
+            
+            
+            if(translation.x > 140 * TProportion()) {
+                [self leftViewShow];
+                return ;
+            }
+             
+            [self leftViewHide] ;
+        }
+        
+    }
     
 }
 
