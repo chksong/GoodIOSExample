@@ -19,6 +19,7 @@
 
 @property(nonatomic , strong) NSArray   *items ;
 @property(nonatomic , strong) NSString *currentClass ;
+@property(nonatomic , assign) BOOL      isSwift ;
 
 //@property NSMutableArray *objects;
 @end
@@ -158,9 +159,11 @@
     NSDictionary *item = self.items[indexPath.row]  ;
     NSString* className = [item[kItemKeyClassPrefix] stringByAppendingString:@"ViewController"];
     
+    _isSwift = NO ;
     Class aClass =  NSClassFromString(className) ;
     if ( ! aClass) {
         aClass = [ self swiftClassFromString:className] ;
+        self.isSwift = YES ;
     }
     
     if (aClass) {
@@ -188,7 +191,14 @@
 
 -(void) codeButtonTapped:(id) sender {
     
-    NSString *urlStr =[NSString stringWithFormat:@"https://github.com/chksong/GoodIOSExample/tree/master/GoodIOSExample/Samples/%@.m" ,self.currentClass] ;
+    NSString *urlStr = nil ;
+    if(_isSwift) {
+        urlStr =[NSString stringWithFormat:@"https://github.com/chksong/GoodIOSExample/tree/master/GoodIOSExample/Samples/%@.swift" ,self.currentClass] ;
+    }
+    else {
+        urlStr =[NSString stringWithFormat:@"https://github.com/chksong/GoodIOSExample/tree/master/GoodIOSExample/Samples/%@.m" ,self.currentClass] ;
+    }
+  
     NSLog(@"%s  urlStr=%@", __FUNCTION__, urlStr);
     
     BrowseCodeViewController *codeCtr = [[BrowseCodeViewController alloc] init];
