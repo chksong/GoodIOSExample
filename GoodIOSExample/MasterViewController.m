@@ -59,6 +59,12 @@
                      kItemKeyDescription: @"自己手工代码测试TabelView各种操作",
                      kItemKeyClassPrefix: @"MoveTable",
                      },
+                   @{
+                       kItemKeyTitle: @"学习swift笔记",
+                       kItemKeyDescription: @"swift中常用控件练习",
+                       kItemKeyClassPrefix: @"studySwift",
+
+                    },
 
 
                    ] ;
