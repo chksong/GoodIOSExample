@@ -11,6 +11,8 @@ import UIKit
 class studySwiftViewController: UIViewController {
     
     var viewContainer : UIView!
+    var controller:UIAlertController!
+    var button :UIButton!
 
   
     //测试 模糊效果
@@ -87,6 +89,73 @@ class studySwiftViewController: UIViewController {
         return NSAttributedString(attributedString: result)
     }
     
+    // 测试button 
+    func testButton() {
+        button = UIButton.buttonWithType(.System) as? UIButton
+        button.frame = CGRect(x: 100, y: 70, width: 100, height: 44)
+        button.setTitle("alert", forState: .Normal)
+        button.setTitle("I 'm pressed", forState: .Highlighted)
+        
+        viewContainer.addSubview(button!)
+        
+        button.addTarget(self, action: "testAlertControler:", forControlEvents: .TouchDown)
+        
+        
+        let button2 = UIButton.buttonWithType(.System) as? UIButton
+        button2?.frame = CGRect(x: 0, y: 70, width: 100, height: 44)
+        button2?.setTitle("ActionSheet", forState: .Normal)
+        button2?.setTitle("I 'm pressed", forState: .Highlighted)
+        
+        viewContainer.addSubview(button2!)
+        
+        button2?.addTarget(self, action: "testAlertControler:", forControlEvents: .TouchDown)
+    }
+    
+    
+    // 测试alert 和 action sheets
+    func testAlertControler(sender:UIButton) {
+        
+        if(sender == button) {
+            controller = UIAlertController(title: "Title", message: "Message", preferredStyle: .Alert)
+            controller.addTextFieldWithConfigurationHandler({( textFiled :UITextField!) -> Void in
+                textFiled.placeholder = "xxxxxxxxxxxx"
+            })
+            
+            let action = UIAlertAction(title: "Done", style:  UIAlertActionStyle.Default ,handler:{[weak self] (paraAction:UIAlertAction!) -> Void in
+               
+                if let textFileds = self!.controller?.textFields
+                {
+                    let theTextFields = textFileds as! [UITextField]
+                    let userName = theTextFields[0].text
+                    println("Your username is \(userName)")
+                    
+                }
+                
+            })
+            
+            controller!.addAction(action)
+            self.presentViewController(controller!, animated: true, completion: nil)
+        }
+        else {
+            controller = UIAlertController(title: "choose how you like", message: "HHHHHH", preferredStyle: .ActionSheet)
+            
+            let actionEmail = UIAlertAction(title: "via email", style: UIAlertActionStyle.Default, handler: { (pAction:UIAlertAction!) -> Void in
+            
+            })
+            
+            let actionMessage = UIAlertAction(title: "via Imessage", style: UIAlertActionStyle.Cancel, handler: { (pAction:UIAlertAction!) -> Void in
+                
+            })
+            
+            let actionDelete = UIAlertAction(title: "Delete photo", style: UIAlertActionStyle.Destructive, handler: { (pAction:UIAlertAction!) -> Void in
+            })
+            
+            controller.addAction(actionEmail)
+            controller.addAction(actionMessage)
+            controller.addAction(actionDelete)
+            presentViewController(controller!, animated:true, completion: nil)
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -100,6 +169,7 @@ class studySwiftViewController: UIViewController {
         testImage()
         testBlurEffect()
         testUILabel()
+        testButton()
     }
     
     override func viewDidAppear(animated: Bool) {
