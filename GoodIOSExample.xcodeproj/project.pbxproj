@@ -25,6 +25,7 @@
 		B05EF2271AE6498B00CEFFAF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B05EF2251AE6498B00CEFFAF /* LaunchScreen.xib */; };
 		B05EF2331AE6498B00CEFFAF /* GoodIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */; };
 		B08608531B29883F004B627E /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B08608521B29883F004B627E /* SettingViewController.m */; };
+		B09140EA1B58ACD9008DD0A4 /* studySwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09140E91B58ACD9008DD0A4 /* studySwiftViewController.swift */; };
 		B0F0D9871B2CDEC200A3739B /* MoveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F0D9851B2CDEC200A3739B /* MoveTableViewController.m */; };
 		B0F0D9881B2CDEC200A3739B /* MoveTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F0D9861B2CDEC200A3739B /* MoveTableViewController.xib */; };
 		B0F1A6321B4E5EC300B3B42C /* NiuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A6311B4E5EC300B3B42C /* NiuViewController.swift */; };
@@ -32,6 +33,10 @@
 		B0F1A63B1B506ED200B3B42C /* MySilderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A63A1B506ED200B3B42C /* MySilderViewController.m */; };
 		B0F1A63D1B50B40200B3B42C /* MySilderViewControllerCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A63C1B50B40200B3B42C /* MySilderViewControllerCenter.swift */; };
 		B0F1A6401B50FB9100B3B42C /* comHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A63F1B50FB9100B3B42C /* comHeader.swift */; };
+		B0F1A6471B51CEDA00B3B42C /* QQLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A6461B51CEDA00B3B42C /* QQLeftViewController.m */; };
+		B0F1A64B1B51DFE200B3B42C /* CKKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A64A1B51DFE200B3B42C /* CKKit.m */; };
+		B0F1A64D1B55FC2B00B3B42C /* QQLeftLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A64C1B55FC2B00B3B42C /* QQLeftLeftViewController.swift */; };
+		B0F1A64F1B55FC4200B3B42C /* QQLeftCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F1A64E1B55FC4200B3B42C /* QQLeftCenterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +82,7 @@
 		B05EF2321AE6498B00CEFFAF /* GoodIOSExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodIOSExampleTests.m; sourceTree = "<group>"; };
 		B08608511B29883F004B627E /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
 		B08608521B29883F004B627E /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		B09140E91B58ACD9008DD0A4 /* studySwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = studySwiftViewController.swift; path = Samples/studySwiftViewController.swift; sourceTree = "<group>"; };
 		B0F0D9651B2C468E00A3739B /* GoodIOSExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoodIOSExample-Bridging-Header.h"; sourceTree = "<group>"; };
 		B0F0D9841B2CDEC200A3739B /* MoveTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoveTableViewController.h; path = Samples/MoveTableViewController.h; sourceTree = "<group>"; };
 		B0F0D9851B2CDEC200A3739B /* MoveTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoveTableViewController.m; path = Samples/MoveTableViewController.m; sourceTree = "<group>"; };
@@ -87,6 +93,12 @@
 		B0F1A63A1B506ED200B3B42C /* MySilderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySilderViewController.m; sourceTree = "<group>"; };
 		B0F1A63C1B50B40200B3B42C /* MySilderViewControllerCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySilderViewControllerCenter.swift; sourceTree = "<group>"; };
 		B0F1A63F1B50FB9100B3B42C /* comHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = comHeader.swift; sourceTree = "<group>"; };
+		B0F1A6451B51CEDA00B3B42C /* QQLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQLeftViewController.h; sourceTree = "<group>"; };
+		B0F1A6461B51CEDA00B3B42C /* QQLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQLeftViewController.m; sourceTree = "<group>"; };
+		B0F1A6491B51DF2F00B3B42C /* CKKIt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CKKIt.h; sourceTree = "<group>"; };
+		B0F1A64A1B51DFE200B3B42C /* CKKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKKit.m; sourceTree = "<group>"; };
+		B0F1A64C1B55FC2B00B3B42C /* QQLeftLeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLeftLeftViewController.swift; sourceTree = "<group>"; };
+		B0F1A64E1B55FC4200B3B42C /* QQLeftCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLeftCenterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +132,12 @@
 			isa = PBXGroup;
 			children = (
 				B0F1A6411B51000700B3B42C /* comHeader */,
-				B0F0D9891B2CDF4200A3739B /* 的 */,
 				B0F0D9831B2CDE8600A3739B /* 简单动画 */,
 				B049494A1AF9A53600C5BD6B /* WKWebView */,
 				B04949391AF71CA600C5BD6B /* WebKit */,
 				B0F0D96A1B2C516600A3739B /* moveTableView */,
 				B0F0D9651B2C468E00A3739B /* GoodIOSExample-Bridging-Header.h */,
+				B09140E91B58ACD9008DD0A4 /* studySwiftViewController.swift */,
 			);
 			name = Samples;
 			sourceTree = "<group>";
@@ -173,6 +185,8 @@
 		B05EF2121AE6498B00CEFFAF /* GoodIOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				B0F1A6511B55FC8B00B3B42C /* JSilder */,
+				B0F1A6501B55FC7400B3B42C /* QQLeft */,
 				B04949321AF71BBC00C5BD6B /* Samples */,
 				B05EF2171AE6498B00CEFFAF /* AppDelegate.h */,
 				B05EF2181AE6498B00CEFFAF /* AppDelegate.m */,
@@ -191,10 +205,9 @@
 				B049493F1AF8608900C5BD6B /* BrowseCodeViewController.m */,
 				B04949401AF8608900C5BD6B /* BrowseCodeViewController.xib */,
 				B0F1A6311B4E5EC300B3B42C /* NiuViewController.swift */,
-				B0F1A6391B506ED200B3B42C /* MySilderViewController.h */,
-				B0F1A63A1B506ED200B3B42C /* MySilderViewController.m */,
-				B0F1A63C1B50B40200B3B42C /* MySilderViewControllerCenter.swift */,
 				B0F1A63F1B50FB9100B3B42C /* comHeader.swift */,
+				B0F1A6491B51DF2F00B3B42C /* CKKIt.h */,
+				B0F1A64A1B51DFE200B3B42C /* CKKit.m */,
 			);
 			path = GoodIOSExample;
 			sourceTree = "<group>";
@@ -245,18 +258,32 @@
 			name = "简单动画";
 			sourceTree = "<group>";
 		};
-		B0F0D9891B2CDF4200A3739B /* 的 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "的";
-			sourceTree = "<group>";
-		};
 		B0F1A6411B51000700B3B42C /* comHeader */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = comHeader;
+			sourceTree = "<group>";
+		};
+		B0F1A6501B55FC7400B3B42C /* QQLeft */ = {
+			isa = PBXGroup;
+			children = (
+				B0F1A64C1B55FC2B00B3B42C /* QQLeftLeftViewController.swift */,
+				B0F1A64E1B55FC4200B3B42C /* QQLeftCenterViewController.swift */,
+				B0F1A6451B51CEDA00B3B42C /* QQLeftViewController.h */,
+				B0F1A6461B51CEDA00B3B42C /* QQLeftViewController.m */,
+			);
+			name = QQLeft;
+			sourceTree = "<group>";
+		};
+		B0F1A6511B55FC8B00B3B42C /* JSilder */ = {
+			isa = PBXGroup;
+			children = (
+				B0F1A6391B506ED200B3B42C /* MySilderViewController.h */,
+				B0F1A63A1B506ED200B3B42C /* MySilderViewController.m */,
+				B0F1A63C1B50B40200B3B42C /* MySilderViewControllerCenter.swift */,
+			);
+			name = JSilder;
 			sourceTree = "<group>";
 		};
 		E33AE370125E4282F74953CE /* Pods */ = {
@@ -418,9 +445,14 @@
 				B05EF2191AE6498B00CEFFAF /* AppDelegate.m in Sources */,
 				B05EF21C1AE6498B00CEFFAF /* MasterViewController.m in Sources */,
 				B002A6221B14483B009D7B7F /* SimpleAnimationViewController.m in Sources */,
+				B0F1A64F1B55FC4200B3B42C /* QQLeftCenterViewController.swift in Sources */,
 				B04949411AF8608900C5BD6B /* BrowseCodeViewController.m in Sources */,
+				B09140EA1B58ACD9008DD0A4 /* studySwiftViewController.swift in Sources */,
+				B0F1A6471B51CEDA00B3B42C /* QQLeftViewController.m in Sources */,
+				B0F1A64D1B55FC2B00B3B42C /* QQLeftLeftViewController.swift in Sources */,
 				B0F1A63D1B50B40200B3B42C /* MySilderViewControllerCenter.swift in Sources */,
 				B0F1A6401B50FB9100B3B42C /* comHeader.swift in Sources */,
+				B0F1A64B1B51DFE200B3B42C /* CKKit.m in Sources */,
 				B08608531B29883F004B627E /* SettingViewController.m in Sources */,
 				B04949621AF9E70B00C5BD6B /* WebKitViewController.m in Sources */,
 				B0F1A63B1B506ED200B3B42C /* MySilderViewController.m in Sources */,
