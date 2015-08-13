@@ -27,7 +27,8 @@ class MySilderViewControllerCenter: UIViewController {
     }
     
 
-    @IBAction func goToOrigiinRootViewControl(sender: AnyObject) {
+    @IBAction func goToOrigiinRootViewControl(sender: AnyObject)
+    {
         NSNotificationCenter.defaultCenter().postNotificationName(MSG_ChangRootViewCtrl, object: nil, userInfo: ["key":Para_ChangRootViewCtrl_main])
     }
     
